@@ -74,7 +74,7 @@ export default function Navbar() {
 
           <div className="hidden items-center gap-2 md:flex">
             {navLinks.map((link) => {
-              const active = pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href));
+              const active = pathname === link.href || pathname.startsWith(link.href);
 
               return (
                 <Link
